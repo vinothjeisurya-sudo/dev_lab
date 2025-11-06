@@ -1,0 +1,9 @@
+trigger:
+-main   # runs on changes pushed to main branch
+
+pool  :
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "Hello Azure Pipeline! Your setup works 🎉"
+  displayName: 'Run Hello World script'
